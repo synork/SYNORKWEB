@@ -1,0 +1,206 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #202124;
+}
+
+main h2 {
+    font-size: 1.5em;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+#google-search {
+    margin-top: 20px;
+}
+
+#google-search form {
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px;
+    width: 723px;
+    max-width: 100%;
+}
+
+#google-search input[type="text"] {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    width: 120%;
+    outline: none;
+}
+
+#google-search button[type="submit"] {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    width: 120%;
+    outline: none;
+}
+
+#google-search button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    width: 120%;
+    outline: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #google-search input[type="text"] {
+        width: 100%;
+    }
+}
+
+#quick-links {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#quick-links h3 {
+    font-size: 1.5em;
+    color: #202124;
+    margin-bottom: 15px;
+}
+
+#quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#quick-links li {
+    margin: 5px 10px;
+}
+
+#quick-links a {
+    color: #4285f4;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #4285f4;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#quick-links a:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+#add-quick-link {
+    background-color: #f8f9fa;
+    border: 1px solid #4285f4;
+    color: #4285f4;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#add-quick-link:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+.remove-quick-link {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.remove-quick-link:hover {
+    color: #b71c1c;
+}
+
+#screensaver {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none; /* Alapértelmezés szerint rejtett */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: sans-serif;
+}
+
+.screensaver-content {
+    text-align: center;
+    position: relative;
+}
+
+.screensaver-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.screensaver-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#screensaver-time {
+    font-size: 5em;
+    margin-bottom: 5px;
+}
+
+#screensaver-date {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#screensaver-greeting {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#screensaver-weather {
+    font-size: 1.2em;
+}
+
+#screensaver-weather img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
