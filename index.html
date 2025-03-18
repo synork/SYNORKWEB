@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synork - HOME</title>
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="icon" href="static/logo_icon_profile-pic.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="myNavbar">
+            <a href="#" class="logo">
+                <img src="static/logo_icon_profile-pic.jpg" alt="Synork Logo">
+            </a>
+            <a href="#">X</a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Synork</h1>
+        <h2>The everything site</h2>
+        <div id="typing-text"></div>
+        <div id="google-search">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" name="q" id="search-input" placeholder="Google Search">
+                <button type="submit">Search</button>
+                <button type="button" id="voice-search-button">Voice Search</button>
+                <button type="button" id="image-search-button">Image Search</button>
+            </form>
+        </div>
+        <div id="quick-links">
+            <h3>Fast Accses</h3>
+            <ul id="quick-links-list"></ul>
+            <button id="add-quick-link">ADD</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Synork</p>
+    </footer>
+    <div id="screensaver">
+        <div class="screensaver-content">
+            <img src="static/yHdhhIbQiD4.jpg" alt="Képernyőkímélő" class="screensaver-image">
+            <div class="screensaver-info">
+                <p id="screensaver-time"></p>
+                <p id="screensaver-date"></p>
+                <p id="screensaver-greeting"></p>
+                <div id="screensaver-weather"></div>
+            </div>
+        </div>
+    </div>
+    <script src="static/navbar.js"></script>
+    <script src="static/main.js"></script>
+    <script src="static/quick-links.js"></script>
+</body>
+</html>
