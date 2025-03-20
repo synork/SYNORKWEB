@@ -121,13 +121,42 @@ document.addEventListener('DOMContentLoaded', function() {
         screensaverGreeting.textContent = greeting;
     }
 
-    setInterval(updateTime, 1000); // Idő frissítése 1 másodpercenként
-    setInterval(updateWeather, 600000); // Időjárás frissítése 10 percenként
-    setInterval(updateGreeting, 60000); // Üdvözlés frissítése percenként
+    setInterval(updateTime, 1000); 
+    setInterval(updateWeather, 600000); 
+    setInterval(updateGreeting, 60000); 
 
     updateTime();
     updateWeather();
-    updateGreeting();
-
-    showScreensaver(); // Képernyőkímélő azonnali megjelenítése
+    updateGreeting();   
+    showScreensaver();
+    
+    
+var iamges = [
+    "images/",
+    "kep2.jpg",
+    "kep3.jpg",
+    "kep4.jpg",
+    "kep5.jpg"
+  ];
+  
+  
+  function randomizator() {
+    var veletlenIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+  }
+  
+  
+  function showImages() {
+    var imagesPath = randomizator();
+    var imagesThing = document.createElement("img");
+    imagesThing.src = imagesPath;
+    document.getElementById("images").appendChild(imagesThing);
+  }
+  
+  
+  window.onload = function() {
+    for (var i = 0; i < 3; i++) { 
+      showImages();
+    }
+  };
 });
